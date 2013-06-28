@@ -4,10 +4,12 @@ Sshalias is a script to generate a ssh-client config file with an alias.
 Examples
 ---------
 
-sshalias.py myusername example.com
-sshalias.py myusername 127.0.0.1
-sshalias.py myusername 192.168.0.1 -v
-sshalias.py -h
+sshalias.py myalias myusername example.com
+sshalias.py myalias myusername 127.0.0.1
+sshalias.py myalias myusername 192.168.0.1 -v
+
+# You can access the server using this syntax then
+ssh myalias
 
 
 Installing for all users
