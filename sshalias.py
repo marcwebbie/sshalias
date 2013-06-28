@@ -4,8 +4,8 @@ from os.path import expanduser, join
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("user", help="User on the ssh server")
-parser.add_argument("host", help="Ssh server address")
+parser.add_argument("user", help="User on the SSH server")
+parser.add_argument("host", help="SSH server address")
 parser.add_argument("-v","--verbose", help="Verbose output", action="store_true")
 args = parser.parse_args()
 
@@ -15,7 +15,7 @@ Host example
   HostName {}
 '''.format(args.user, args.host)
 
-config_file_path = join(expanduser("~"), '.ssh/config_test')
+config_file_path = join(expanduser("~"), '.ssh/config')
 with open(config_file_path, 'w+') as fb:
     fb.write(sshconfig_text)
 
