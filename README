@@ -1,0 +1,21 @@
+Sshalias is a script to generate a ssh-client config file with an alias.
+
+
+Examples
+---------
+
+sshalias.py myusername example.com
+sshalias.py myusername 127.0.0.1
+sshalias.py myusername 192.168.0.1 -v
+sshalias.py -h
+
+
+Installing for all users
+---------
+chmod a+x sshalias.py
+sudo mv sshalias.py /usr/bin/
+
+
+Uninstalling
+---------
+sudo rm /usr/bin/sshalias.py 
